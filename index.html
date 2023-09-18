@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridsnaps</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            height: 800px;
+            width: 800px;
+            background-color: bisque;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 1rem;
+        }
+        .img{
+           background-size: cover;
+            object-fit: cover;
+            height: 100%;
+        }
+        .child{
+            height: 100%;
+            gap: 1rem;
+        }
+        .child1{
+            background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp');
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        .child2{
+            background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp');
+            background-position: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            grid-row: 1/3;
+            grid-column: 2/3;
+        }
+        .child3{
+            background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp');
+        }
+        .child4{
+            background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp');
+            background-position: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            grid-row: 2/4;
+            grid-column: 1/2;
+        }
+        .child5{
+            background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp');
+        }
+        .child6{
+            background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp');
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            grid-row: 2/4;
+            grid-column: 3/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <child class="child1"></child>
+        <child class="child2"></child>
+        <child class="child3"></child>
+        <child class="child4"></child>
+        <child class="child5"></child>
+        <child class="child6"></child>
+    </div>
+</body>
+</html>
